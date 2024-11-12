@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
 
-const ItemCard = ({ item }) => {
+const ItemCard = ({ key, item }) => {
   const handleAddToCart = async () => {
     try {
       await fetch('https://e-learn-full-stack.onrender.com/api/add-to-mycourses', {
