@@ -18,7 +18,7 @@ app.set('view engine', 'ejs'); // Set EJS as templating engine
 app.set('views', path.join(__dirname, 'views')); // Set views directory
 
 // MongoDB connection
-mongoose.connect(prcess.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB'))
